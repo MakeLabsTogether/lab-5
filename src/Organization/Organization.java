@@ -19,5 +19,26 @@ public class Organization {
         idCount++;
         return (int) System.currentTimeMillis() + idCount;
     }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "\nОрганизация: " +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", coordinates=" + coordinates +
+                ", creationDate=" + creationDate +
+                ", annualTurnover=" + annualTurnover +
+                ", employeesCount=" + employeesCount +
+                ", type=" + type +
+                ", postalAddress=" + postalAddress;
+    }
 }
 
